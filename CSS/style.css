@@ -1,7 +1,11 @@
 header {
     background-color: #08487D;
     height: 200px;
-    width: 100%;
+    display: block;
+    min-width: 100%;
+    margin-left: 0px;
+    margin-right
+    color: #f7f7f7;
 }
 
 @font-face {
@@ -17,6 +21,7 @@ h1 {
     font-size: 74pt;
     color: #f7f7f7;
     margin-top: -10px;
+    padding-right: 120px;
 }
 
 h2 {
@@ -33,8 +38,25 @@ h3 {
     display: inline-block;
     margin-left: 142px;
     color: #f7f7f7;
+    margin-right: 120px;
+    margin-bottom: -20px;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34pt; 
+    color: #08487D;
+    display: in-line block;
+    margin-left: 142px;
     margin-right: 240px;
     margin-bottom: -20px;
+}
+
+.mySkills {
+    background-color: #f7f7f7;
+    width: 100%;
+    padding-right: 0px;
+    margin-right: 0%;
 }
 
 #logo {
@@ -79,15 +101,16 @@ li {
     height: 808px;
     padding-bottom: 10px;
     padding-right: 60px;
-    text-align: left;
-    background-color: #0072D0;
     padding-left: 60px;
     padding-top: 60px;
+    text-align: left;
+    background-color: #0072D0;
     float: left;
+    width: 100%;
     }
 
-.content {
-    padding-top: 100px;
+.aboutMe {
+    padding: 15px;
     margin-top: 109px;
     margin-left: -60px;
     margin-right: -60px;
@@ -129,13 +152,12 @@ button {
     }
 
 
-footer {
+#footer {
     background-color: #08487D;
-    padding-top: 1600px;
-    height: 140px;
-    margin-top: -100px;
-    margin-bottom: 0px;
-    padding-bottom: 20px;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     color: #f7f7f7;
 }
 
@@ -150,6 +172,7 @@ ul.footerNav {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
     padding: 20px;
+    padding-top: 50px;
     margin-right: 60px;
     font-size: 18pt;
 }
@@ -157,8 +180,134 @@ ul.footerNav {
 .icons {
     float: right;   
     margin-right: 80px;
-    padding: -5px;
-    margin-top: 0;
-
+    padding-top: -60px;
+    padding-bottom: 20px;
     }
 
+
+
+    /* <!-- My UX Skills section coded using CSS flex --> */
+
+.flexContainer {
+    display: flex;
+    height: 530px;
+    width: 100%;
+    padding-top: 60px;
+    margin-left: -160px;
+    background-color: #f7f7f7;
+    flex-wrap: wrap;
+    }
+
+
+
+#row {
+    background-color: #f7f7f7;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.skillsFlex {
+    width: 30%;
+    padding: 64px;
+    margin-left: 100px;
+    margin-right: -280px;
+    justify-content: space-around;
+    }
+
+.skillsIcon {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin-left: 300px;
+    margin-right: -100px;
+    margin-top: -40px;
+}
+
+.myWork {
+    width: 100%;
+}
+
+.specialtyCategories {
+    width: 400px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+#specialties {
+    color:#08487D;
+    padding-top: 560px;
+    margin-left: 142px;
+}
+
+.skillsDetail {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 14pt; 
+    line-height: 150%;
+    margin-top: 30px;
+    margin-left: 142px;
+    margin-right: 142px;
+    color: #575757;  
+    width: 400px;
+}
+
+/* <!-- My Work Section Constructed using CSS Grid --> */
+#workHeader {
+    background-color: #08487D;
+    color: #f7f7f7;
+    height: 200px;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 142px;
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "topRow topRow"
+    "leftSidebar rightContent"
+    ;
+}
+
+#doggoTop {
+    grid-area: topRow;
+    background-image: url("..images/doggo hero image.png");
+    height: 960px;
+}
+
+.leftSidebar {
+    grid-area: leftSidebar;
+    background-color: #575757;
+}
+
+.rightContent {
+    grid-area: rightContent;
+    align-content: start;
+
+}
+
+#doggoDescription {
+    grid-area: leftSidebar;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 14pt; 
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+    text-align:center;
+    color: #f7f7f7;
+    background: rgba(87,87,87, 0.9);
+    height: 140px;
+    width: 100%;
+}
+
+#petFriendly {
+    color: #f7f7f7;
+    padding-top: 20px;
+    margin-top: 0px;
+}
