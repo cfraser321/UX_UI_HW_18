@@ -1,35 +1,39 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 header {
     background-color: #08487D;
     height: 200px;
     display: block;
-    min-width: 100%;
-    margin-left: 0px;
-    margin-right
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
     color: #f7f7f7;
 }
 
 @font-face {
     font-family: Espresso Roast Caps;
-    src: url(fonts/EspressoRoast-Caps.woff2);
+    src: url("fonts/EspressoRoast-Caps.woff2");
     font-family: Espresso Roast Script;
-    src: url(fonts/EspressoRoast-Script.woff2);
+    src: url("fonts/EspressoRoast-Script.woff2");
 }
-
 
 h1 {
-    font-family: Espresso Roast Caps;
-    font-size: 74pt;
+    font-family: 'Espresso Roast Caps', sans-serif;
+    font-size: 70pt;
     color: #f7f7f7;
-    margin-top: -10px;
-    padding-right: 120px;
-}
+    margin-top: 0;
+    line-height: 105%
+   }
 
 h2 {
-    font-family: Espresso Roast Script;
-    font-size: 78pt;
-    margin-top: -90px;
-    padding-bottom: 40px;
+    font-family: 'Espresso Roast Script', sans-serif;
+    font-size: 76pt;
     color: #f7f7f7;
+    margin-top: 0px;
+    line-height: 20%;
 }
 
 h3 {
@@ -52,13 +56,6 @@ h4 {
     margin-bottom: -20px;
 }
 
-.mySkills {
-    background-color: #f7f7f7;
-    width: 100%;
-    padding-right: 0px;
-    margin-right: 0%;
-}
-
 #logo {
     vertical-align: top;
     margin: 0px;
@@ -71,21 +68,16 @@ h4 {
    }
 
 .headerNav {
+    display: in-line block;
     width: 100%;
-    float: right;
-    position: absolute;
-    top: 0;
-    padding-top: 150px;
-    vertical-align: top;
+    padding-top: 0px;
 }
 
 .inlineBlock {
     list-style: none;
     color: #f7f7f7;
     text-align: right;
-    float: right;
-    margin: 0;
-    padding: 0;
+    margin-top: -80px;
 }
 
 li {
@@ -98,31 +90,37 @@ li {
 }
 
 .heroImg {
-    height: 808px;
-    padding-bottom: 10px;
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-top: 60px;
+    height: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
     text-align: left;
     background-color: #0072D0;
-    float: left;
+    display: block;
     width: 100%;
     }
 
+#headShot {
+    display: in-line block;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 0px;
+    padding-bottom: 150px;
+}   
+
 .aboutMe {
-    padding: 15px;
-    margin-top: 109px;
-    margin-left: -60px;
-    margin-right: -60px;
+    display: inline-block;
+    height: 800px;
+    padding-top: 60px;
     background-color: #025396;
-    height: 900px;
 }
 
 #myName {
-    float: right;
-    vertical-align: top;
-    padding-left:-100px;
-    margin-top: -300px;
+    display: in-line block;
+    padding-left: 420px;
+    padding-top: -100px;
+    margin-top: -400px;
+    margin-bottom: 0px;
 }
 
 p {
@@ -155,8 +153,6 @@ button {
 #footer {
     background-color: #08487D;
     height: 80px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     color: #f7f7f7;
 }
@@ -188,16 +184,33 @@ ul.footerNav {
 
     /* <!-- My UX Skills section coded using CSS flex --> */
 
-.flexContainer {
-    display: flex;
-    height: 530px;
+.mySkills {
+    display: block;
     width: 100%;
     padding-top: 60px;
-    margin-left: -160px;
+    margin-top: 800px;
+    padding-bottom: 220px;
     background-color: #f7f7f7;
+    width: 100%;
+}
+
+#specialties {
+    color:#08487D;
+    display: in-line block;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 142px;
+}
+
+.flexContainer {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-left: -160px;
     flex-wrap: wrap;
     }
-
 
 
 #row {
@@ -224,6 +237,7 @@ ul.footerNav {
 }
 
 .myWork {
+    display: block;
     width: 100%;
 }
 
@@ -231,12 +245,6 @@ ul.footerNav {
     width: 400px;
     margin-top: 30px;
     align-items: flex-start;
-}
-
-#specialties {
-    color:#08487D;
-    padding-top: 560px;
-    margin-left: 142px;
 }
 
 .skillsDetail {
@@ -251,7 +259,7 @@ ul.footerNav {
 }
 
 /* <!-- My Work Section Constructed using CSS Grid --> */
-#workHeader {
+.workHeader {
     background-color: #08487D;
     color: #f7f7f7;
     height: 200px;
@@ -262,52 +270,43 @@ ul.footerNav {
     padding-top: 60px;
     padding-bottom: 0px;
     margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 .workGrid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1 fr;
+    grid-template-rows: .25fr .25fr .25fr;
     grid-template-areas:
-    "topRow topRow"
-    "leftSidebar rightContent"
+    "topRow topRow topRow"
+    "leftSidebar leftSidebar rightContent"
     ;
 }
 
-#doggoTop {
+.topRow {
     grid-area: topRow;
-    background-image: url("..images/doggo hero image.png");
-    height: 960px;
 }
 
 .leftSidebar {
     grid-area: leftSidebar;
     background-color: #575757;
+    align-content: center;
 }
 
 .rightContent {
     grid-area: rightContent;
-    align-content: start;
-
-}
-
-#doggoDescription {
-    grid-area: leftSidebar;
-    font-family: 'Raleway', sans-serif; 
-    font-size: 14pt; 
-    margin-top: 40px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 20px;
-    text-align:center;
-    color: #f7f7f7;
-    background: rgba(87,87,87, 0.9);
-    height: 140px;
-    width: 100%;
+    background-color: #575757;
+    align-content: center;
 }
 
 #petFriendly {
     color: #f7f7f7;
-    padding-top: 20px;
-    margin-top: 0px;
+}
+
+.workButton {
+    align-content: center;
+}
+
+#diHeading {
+    color: #f7f7f7;
 }
