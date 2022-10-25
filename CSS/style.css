@@ -14,9 +14,9 @@ header {
 }
 
 @font-face {
-    font-family: Espresso Roast Caps;
+    font-family: 'Espresso Roast Caps';
     src: url("fonts/EspressoRoast-Caps.woff2");
-    font-family: Espresso Roast Script;
+    font-family: 'Espresso Roast Script';
     src: url("fonts/EspressoRoast-Script.woff2");
 }
 
