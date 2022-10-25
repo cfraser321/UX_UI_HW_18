@@ -417,7 +417,7 @@ a {
 
 /* Mobile Media Query */
 
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: 600px) {
     header {
         height: 100px;
         display: block;
