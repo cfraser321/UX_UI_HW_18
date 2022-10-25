@@ -22,7 +22,7 @@ header {
 
 h1 {
     font-family: 'Espresso Roast Caps', sans-serif;
-    font-size: 70pt;
+    font-size: 62pt;
     color: #f7f7f7;
     margin-top: 0;
     line-height: 105%;
@@ -30,7 +30,7 @@ h1 {
 
 h2 {
     font-family: 'Espresso Roast Script', sans-serif;
-    font-size: 76pt;
+    font-size: 60pt;
     color: #f7f7f7;
     margin-top: 0px;
     line-height: 20%;
@@ -38,7 +38,7 @@ h2 {
 
 h3 {
     font-family: 'Raleway', sans-serif;
-    font-size: 86pt; 
+    font-size: 54pt; 
     color: #f7f7f7;
     display: inline-block;
     margin-left: 142px;
@@ -50,7 +50,7 @@ h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 34pt; 
     color: #08487D;
-    display: in-line block;
+    display: inline-block;
     margin-left: 142px;
     margin-right: 240px;
     margin-bottom: -20px;
@@ -68,7 +68,7 @@ h4 {
    }
 
 .headerNav {
-    display: in-line block;
+    display: inline-block;
     width: 100%;
     padding-top: 0px;
 }
@@ -77,7 +77,7 @@ h4 {
     list-style: none;
     color: #f7f7f7;
     text-align: right;
-    margin-top: -80px;
+    
 }
 
 li {
@@ -101,8 +101,9 @@ li {
     }
 
 #headShot {
-    display: in-line block;
-    padding-top: 20px;
+    display: inline-block;
+    width: 33%;
+    padding-top: 60px;
     padding-left: 60px;
     padding-right: 0px;
     padding-bottom: 150px;
@@ -116,11 +117,12 @@ li {
 }
 
 #myName {
-    display: in-line block;
+    display: inline-block;
     padding-left: 420px;
-    padding-top: -100px;
-    margin-top: -400px;
+    padding-top: 0px;
+    margin-top: -800px;
     margin-bottom: 0px;
+    width: 66%;
 }
 
 p {
@@ -168,7 +170,7 @@ button {
 }
 
 ul.footerNav {
-    display: in-line block;
+    display: inline-block;
     padding-top: 0px;
     background-color: #08487D;
     text-align: right;
@@ -185,7 +187,7 @@ ul.footerNav {
 }
 
 .icons {
-   display: in-line block;  
+   display: inline-block;  
    margin-top: 0px;
    margin-left: 0px;
    padding-left: 0px;
@@ -212,8 +214,8 @@ ul.footerNav {
 #specialties {
     color:#08487D;
     display: in-line block;
-    padding-top: 0px;
-    margin-top: 0px;
+    padding-top: 40px;
+    margin-top: 160px;
     margin-left: 142px;
 }
 
@@ -483,7 +485,7 @@ a {
         font-family: 'Raleway', sans-serif;
         font-size: 22pt; 
         color: #08487D;
-        display: in-line block;
+        display: inline-block;
         }
     
     p {
